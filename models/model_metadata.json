@@ -1,0 +1,30 @@
+{
+  "model_name": "XGBoost",
+  "features": [
+    "IDA",
+    "IEG",
+    "IAA",
+    "IPS",
+    "IPP",
+    "IPV",
+    "INDE",
+    "Fase_num",
+    "Idade_num",
+    "Anos_PM",
+    "IDA_x_IEG",
+    "IPS_x_IAA",
+    "Media_Academica",
+    "Media_Psico"
+  ],
+  "metrics": {
+    "auc": 0.9919075644798339,
+    "f1": 0.9726027397260274,
+    "accuracy": 0.9629629629629629
+  },
+  "target_description": "em_risco: 1 = aluno em risco de defasagem, 0 = sem risco",
+  "criteria": [
+    "IAN <= 5.0 (defasagem moderada ou severa)",
+    "Defasagem < 0",
+    "Pedra = Quartzo"
+  ]
+}
